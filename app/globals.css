@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@theme {
+  --font-heading: var(--font-poetsen), sans-serif;
+  --font-sans: var(--font-roboto), sans-serif;
+  --font-body: var(--font-roboto), sans-serif;
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+  
+  .film-grain {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/7/76/1k_Dissolve_Noise_Texture.png');
+    background-repeat: repeat;
+    opacity: 0.05;
+    pointer-events: none;
+  }
+}
+
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 12s linear infinite;
+}
