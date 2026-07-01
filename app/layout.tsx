@@ -17,7 +17,7 @@ const poetsenOne = Poetsen_One({
 });
 
 export const metadata: Metadata = {
-  title: 'CAUAHCM | Portfolio',
+  title: 'FILMMAKER | Portfolio',
   description: 'FILMMAKER AND VIDEOMAKER SPECIALIZED IN PARTIES AND VIDEOCLIPS.',
 };
 
